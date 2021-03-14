@@ -62,9 +62,6 @@ $roles_map = {
     worker => ["hbase-server"],
     client => ["hbase-client"],
   },
-  ignite_hadoop => {
-    worker => ["ignite-server"],
-  },
   solrcloud => {
     worker => ["solr-server"],
   },
@@ -204,7 +201,6 @@ class node_with_roles ($roles = hiera("bigtop::roles")) inherits hadoop_cluster_
     "flink",
     "hadoop",
     "hadoop_hbase",
-    "ignite_hadoop",
     "hadoop_flume",
     "hadoop_hive",
     "hadoop_oozie",

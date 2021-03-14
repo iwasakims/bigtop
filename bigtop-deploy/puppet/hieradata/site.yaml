@@ -17,7 +17,6 @@ hadoop::hadoop_storage_dirs:
 #  - flink
 #  - flume
 #  - gpdb
-#  - ignite_hadoop
 #  - hbase
 #  - hcat
 #  - hive
