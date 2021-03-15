@@ -123,11 +123,6 @@ $roles_map = {
   zeppelin => {
     master => ["zeppelin-server"],
   },
-  qfs => {
-    master => ["qfs-metaserver"],
-    worker => ["qfs-chunkserver", "qfs-client"],
-    client => ["qfs-client"],
-  },
   gpdb => {
     master => ["gpdb-master"],
     worker => ["gpdb-segment"],
@@ -213,7 +208,6 @@ class node_with_roles ($roles = hiera("bigtop::roles")) inherits hadoop_cluster_
     "livy",
     "solr",
     "spark",
-    "qfs",
     "tez",
     "ycsb",
     "kerberos",
